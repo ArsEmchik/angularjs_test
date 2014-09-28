@@ -8,7 +8,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'inherited_resources'
-gem 'bootstrap-sass', '~> 3.2.0'
+gem 'angular-ui-bootstrap-rails'
 gem 'slim-rails'
 
 group :development do
