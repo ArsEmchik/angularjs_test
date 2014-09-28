@@ -38,7 +38,7 @@ app.controller('QuestionIndexController', ['$scope', '$location', 'Question', fu
     }
 }]);
 
-app.controller('QuestionIndexController', ['$scope', 'Forum', 'Comment', '$routeParams', function ($scope, Question, Comment, $routeParams) {
+app.controller('QuestionIndexController', ['$scope', 'Question', 'Comment', '$routeParams', function ($scope, Question, Comment, $routeParams) {
     // get question from the server
     $scope.question = Question.get({id: $routeParams.id})
 }]);

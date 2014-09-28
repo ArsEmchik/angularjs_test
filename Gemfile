@@ -11,7 +11,8 @@ gem 'inherited_resources'
 gem 'angular-ui-bootstrap-rails'
 gem 'slim-rails'
 gem 'angularjs-rails'
-gem 'angularjs-rails-resource', '~> 1.1.1'
+gem 'bootstrap-sass', '~> 3.2.0'
+
 
 group :development do
   gem 'spring'

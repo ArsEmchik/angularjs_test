@@ -3,7 +3,7 @@ angular.module('app', ['ngResource', 'app.loading'])
         .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
             $routeProvider
                     .when('/',          {controller: 'QuestionIndexController',    templateUrl: '<%= asset_path('templates/index.html') %>'})
-                    .when('/forum/new', {controller: 'QuestionCreateController',   templateUrl: '<%= asset_path('templates/new.html') %>'})
-                    .when('/forum/:id', {controller: 'QuestionShowController',     templateUrl: '<%= asset_path('templates/show.html') %>'})
+                    .when('/question/new', {controller: 'QuestionCreateController',   templateUrl: '<%= asset_path('templates/new.html') %>'})
+                    .when('/question/:id', {controller: 'QuestionShowController',     templateUrl: '<%= asset_path('templates/show.html') %>'})
                     .otherwise({redirectTo: '/'});
         }]);
