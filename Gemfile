@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'inherited_resources'
 gem 'angular-ui-bootstrap-rails'
 gem 'slim-rails'
+gem 'angularjs-rails'
+gem 'angularjs-rails-resource', '~> 1.1.1'
 
 group :development do
   gem 'spring'

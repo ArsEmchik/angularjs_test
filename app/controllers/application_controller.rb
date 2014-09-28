@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
+  protect_from_forgery
 
   def index
-    render :layout => 'application', :nothing => true
+    render :nothing => true, :layout => 'application.html.erb'
   end
 end
