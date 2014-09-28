@@ -12,8 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require angular-ui-bootstrap
 //= require angular
+//= require angular-ui-bootstrap
 //= require ../angular/app.js
 //= require_tree ../angular
 //= require_tree .

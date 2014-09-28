@@ -17,7 +17,7 @@ app.controller('QuestionIndexController', ['$scope', 'Question', function ($scop
     }
 }]);
 
-app.controller('QuestionIndexController', ['$scope', '$location', 'Question', function ($scope, $location, Question) {
+app.controller('QuestionCreateController', ['$scope', '$location', 'Question', function ($scope, $location, Question) {
     // create new question
     $scope.save = function () {
 
@@ -38,7 +38,7 @@ app.controller('QuestionIndexController', ['$scope', '$location', 'Question', fu
     }
 }]);
 
-app.controller('QuestionIndexController', ['$scope', 'Question', 'Comment', '$routeParams', function ($scope, Question, Comment, $routeParams) {
+app.controller('QuestionShowController', ['$scope', 'Question', 'Comment', '$routeParams', function ($scope, Question, Comment, $routeParams) {
     // get question from the server
     $scope.question = Question.get({id: $routeParams.id})
 }]);
