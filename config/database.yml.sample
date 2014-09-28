@@ -1,0 +1,26 @@
+default: &default
+  adapter: postgresql
+  user: postgres
+  pool: 5
+  timeout: 5000
+  user:
+  password:
+
+
+development:
+  <<: *default
+  database: angularjs_test_dev
+
+test:
+  <<: *default
+  database: angularjs_test_test
+
+staging:
+  <<: *default
+  database: taxi_monitor__staging
+
+production:
+  <<: *default
+  database: angularjs_test_production
+  username: angularjs_test
+  password: <%= ENV['ANGULARJS_TEST_DATABASE_PASSWORD'] %>
