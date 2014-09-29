@@ -1,5 +1,5 @@
 'use strict';
-angular.module('app', ['ngResource', 'app.loading'])
+angular.module('app', ['ngResource', 'app.loading', 'mobile-angular-ui'])
         .config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
             $routeProvider
                     .when('/',             {controller: 'QuestionIndexController',    templateUrl: '<%= asset_path('templates/index.html') %>'})

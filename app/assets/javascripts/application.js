@@ -14,6 +14,6 @@
 //= require jquery_ujs
 //= require angular.min
 //= require angular-resource.min
-//= require angular-ui-bootstrap
+//= require ../../../vendor/assets/mobile-angular-ui/dist/js/mobile-angular-ui.min
 //= require ../angular/app.js
 //= require_tree ../angular
