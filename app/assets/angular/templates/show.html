@@ -1,4 +1,4 @@
-<h2>Forum: {{forum.name}}</h2>
+<h2>Question: {{question.name}}</h2>
 <hr/>
 
 <div ng-controller="CommentsController">
@@ -6,7 +6,7 @@
     <!-- This will only show when there's no items to let the user know there's purposefully nothing there.. -->
     <div ng-show="comments.$resolved && comments.length == 0">
         <h4>There's nothing here...</h4>
-        <p>Be the first to comment on this Forum below!</p>
+        <p>Be the first to comment on this Question below!</p>
     </div>
 
     <!-- Iterate over the comments -->
@@ -19,21 +19,21 @@
                         {{comment.created_at}}
                     </div>
                 </h4>
-                {{comment.body}}
+                {{comment.answer}}
             </div>
         </div>
     </div>
 
     <hr/>
 
-    <!-- This is the form to create a comment -->
     <form ng-submit="save()">
         <input type="text" ng-model="name" style="width: 100%;" placeholder="Name"/>
         <div ng-repeat="error in errors.name" class="alert alert-error"><strong>Name</strong> {{error}}</div>
 
-        <textarea ng-model="body" rows="4" style="width: 100%;" placeholder="Comment"></textarea>
+        <textarea ng-model="answer" rows="4" style="width: 100%;" placeholder="Comment"></textarea>
         <div ng-repeat="error in errors.body" class="alert alert-error"><strong>Body</strong> {{error}}</div>
 
-        <button type="submit" class="btn btn-primary btn-large">Post!</button>
+        <button type="submit" class="btn btn-primary btn-large">Post it!</button>
     </form>
 </div>
+

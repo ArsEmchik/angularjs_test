@@ -18,6 +18,9 @@ app.controller('QuestionIndexController', ['$scope', 'Question', function ($scop
 }]);
 
 app.controller('QuestionCreateController', ['$scope', '$location', 'Question', function ($scope, $location, Question) {
+    // index - show all questions
+    $scope.items = Question.query();
+
     // create new question
     $scope.save = function () {
 
@@ -39,6 +42,9 @@ app.controller('QuestionCreateController', ['$scope', '$location', 'Question', f
 }]);
 
 app.controller('QuestionShowController', ['$scope', 'Question', 'Comment', '$routeParams', function ($scope, Question, Comment, $routeParams) {
+    // index - show all questions
+    $scope.items = Question.query();
+
     // get question from the server
     $scope.question = Question.get({id: $routeParams.id})
 }]);

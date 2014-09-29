@@ -7,17 +7,14 @@
     <div class="well" style="text-align: center; min-height: 400px">
         <h1>
             <p>Hi all. We are on the main page</p>
+
             <p>You can create a new question and answer existing one</p>
         </h1>
     </div>
 </div>
 
 <div content-for="mainSidebar">
-    <tr ng-repeat="item in items">
-        <td width="100%"><a class="list-group-item" href="#/question/{{item.id}}">{{item.name}}<i
-                class="fa fa-chevron-right pull-right"></i></a></td>
-
-        <!-- When the user clicks this button it will call the 'destory()' method within the controller -->
-        <td><a ng-click="destroy($index)" href=""><i class="icon-trash"></i></a></td>
-    </tr>
+    <div ng-repeat="item in items">
+        <a class="list-group-item" href="#/question/{{item.id}}">{{item.name}}</a>
+    </div>
 </div>
