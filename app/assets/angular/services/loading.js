@@ -1,6 +1,6 @@
 /*
- Borrowed from: https://github.com/lavinjj/angularjs-spinner
- */
+Borrowed from: https://github.com/lavinjj/angularjs-spinner
+*/
 angular.module('app.loading', [])
     .config(['$httpProvider', function ($httpProvider) {
         var $http,
