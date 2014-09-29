@@ -37,3 +37,9 @@
     </form>
 </div>
 
+<div content-for="mainSidebar">
+    <div ng-repeat="item in items">
+        <a class="list-group-item" href="#/question/{{item.id}}">{{item.name}}</a>
+    </div>
+</div>
+
