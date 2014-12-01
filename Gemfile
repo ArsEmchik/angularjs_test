@@ -13,6 +13,10 @@ gem 'slim-rails'
 gem 'angularjs-rails'
 
 
+
+
+
+
 group :development do
   gem 'spring'
 end
